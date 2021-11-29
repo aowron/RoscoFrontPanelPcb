@@ -1,0 +1,331 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 61A29212
+P 3150 1000
+F 0 "#PWR0101" H 3150 850 50  0001 C CNN
+F 1 "+5V" V 3165 1128 50  0000 L CNN
+F 2 "" H 3150 1000 50  0001 C CNN
+F 3 "" H 3150 1000 50  0001 C CNN
+	1    3150 1000
+	0    1    1    0   
+$EndComp
+$Sheet
+S 5000 1200 800  1350
+U 61ABC59E
+F0 "RS232" 50
+F1 "rs232.sch" 50
+$EndSheet
+$Comp
+L power:GND #PWR0102
+U 1 1 61AE8770
+P 1700 1600
+F 0 "#PWR0102" H 1700 1350 50  0001 C CNN
+F 1 "GND" H 1705 1427 50  0000 C CNN
+F 2 "" H 1700 1600 50  0001 C CNN
+F 3 "" H 1700 1600 50  0001 C CNN
+	1    1700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1200 1700 1200
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61B5793A
+P 1000 2450
+F 0 "J1" H 1108 2631 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1108 2540 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1000 2450 50  0001 C CNN
+F 3 "~" H 1000 2450 50  0001 C CNN
+	1    1000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2450 1200 2450
+Wire Wire Line
+	1200 2700 1200 2550
+Text Label 1300 2450 0    50   ~ 0
+ResetLeg1
+Text Label 1300 2700 0    50   ~ 0
+ResetLeg3
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61B5EE5C
+P 1100 3200
+F 0 "J3" H 1208 3381 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 3290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 3200 50  0001 C CNN
+F 3 "~" H 1100 3200 50  0001 C CNN
+	1    1100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 61B5F555
+P 1100 3600
+F 0 "J4" H 1208 3781 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 3690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 3600 50  0001 C CNN
+F 3 "~" H 1100 3600 50  0001 C CNN
+	1    1100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 61B5FCC9
+P 1100 4000
+F 0 "J5" H 1208 4181 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 4090 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 4000 50  0001 C CNN
+F 3 "~" H 1100 4000 50  0001 C CNN
+	1    1100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 61B6022E
+P 1100 4400
+F 0 "J6" H 1208 4581 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 4490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 4400 50  0001 C CNN
+F 3 "~" H 1100 4400 50  0001 C CNN
+	1    1100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61B61363
+P 2100 3200
+F 0 "D1" H 2093 2945 50  0000 C CNN
+F 1 "LED" H 2093 3036 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 2100 3200 50  0001 C CNN
+F 3 "~" H 2100 3200 50  0001 C CNN
+	1    2100 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61B62047
+P 2100 3600
+F 0 "D2" H 2093 3345 50  0000 C CNN
+F 1 "LED" H 2093 3436 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 2100 3600 50  0001 C CNN
+F 3 "~" H 2100 3600 50  0001 C CNN
+	1    2100 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 61B627DF
+P 2100 4000
+F 0 "D3" H 2093 3745 50  0000 C CNN
+F 1 "LED" H 2093 3836 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 2100 4000 50  0001 C CNN
+F 3 "~" H 2100 4000 50  0001 C CNN
+	1    2100 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61B62E45
+P 2100 4400
+F 0 "D4" H 2093 4145 50  0000 C CNN
+F 1 "LED" H 2093 4236 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 2100 4400 50  0001 C CNN
+F 3 "~" H 2100 4400 50  0001 C CNN
+	1    2100 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 3200 1950 3200
+Wire Wire Line
+	2250 3200 2400 3200
+Wire Wire Line
+	2400 3200 2400 3300
+Wire Wire Line
+	2400 3300 1300 3300
+Wire Wire Line
+	1300 3600 1950 3600
+Wire Wire Line
+	2250 3600 2400 3600
+Wire Wire Line
+	2400 3600 2400 3700
+Wire Wire Line
+	2400 3700 1300 3700
+Wire Wire Line
+	1300 4000 1950 4000
+Wire Wire Line
+	2250 4000 2350 4000
+Wire Wire Line
+	2350 4000 2350 4100
+Wire Wire Line
+	2350 4100 1300 4100
+Wire Wire Line
+	1300 4400 1950 4400
+Wire Wire Line
+	2250 4400 2350 4400
+Wire Wire Line
+	2350 4400 2350 4500
+Wire Wire Line
+	2350 4500 1300 4500
+Text Label 1600 3200 0    50   ~ 0
+RunA
+Text Label 1600 3300 0    50   ~ 0
+RunK
+Text Label 1600 3600 0    50   ~ 0
+ResetA
+Text Label 1600 3700 0    50   ~ 0
+ResetK
+Text Label 1600 4000 0    50   ~ 0
+Led1A
+Text Label 1600 4100 0    50   ~ 0
+Led1K
+Text Label 1600 4400 0    50   ~ 0
+Led2A
+Text Label 1600 4500 0    50   ~ 0
+Led2K
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 61B788A6
+P 2400 1200
+F 0 "J8" V 2554 1012 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2463 1012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 1200 50  0001 C CNN
+F 3 "~" H 2400 1200 50  0001 C CNN
+	1    2400 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1000 2400 1000
+Text Label 1700 1000 0    50   ~ 0
+PwrSwitchIn
+Text Label 2600 1000 0    50   ~ 0
+PwrSwitchOut
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61B87087
+P 1050 4700
+F 0 "J2" H 1158 4881 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1158 4790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1050 4700 50  0001 C CNN
+F 3 "~" H 1050 4700 50  0001 C CNN
+	1    1050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1000 3150 1000
+$Comp
+L power:+5V #PWR0103
+U 1 1 61B9AB52
+P 1500 4700
+F 0 "#PWR0103" H 1500 4550 50  0001 C CNN
+F 1 "+5V" V 1515 4828 50  0000 L CNN
+F 2 "" H 1500 4700 50  0001 C CNN
+F 3 "" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 4700 1250 4700
+$Comp
+L power:GND #PWR0104
+U 1 1 61B9B890
+P 1400 4800
+F 0 "#PWR0104" H 1400 4550 50  0001 C CNN
+F 1 "GND" H 1405 4627 50  0000 C CNN
+F 2 "" H 1400 4800 50  0001 C CNN
+F 3 "" H 1400 4800 50  0001 C CNN
+	1    1400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4800 1400 4800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61BB40B5
+P 5100 3250
+F 0 "H1" H 5200 3296 50  0000 L CNN
+F 1 "MountingHole" H 5200 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5100 3250 50  0001 C CNN
+F 3 "~" H 5100 3250 50  0001 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61BB554A
+P 5950 3250
+F 0 "H3" H 6050 3296 50  0000 L CNN
+F 1 "MountingHole" H 6050 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5950 3250 50  0001 C CNN
+F 3 "~" H 5950 3250 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61BB5D37
+P 5100 3700
+F 0 "H2" H 5200 3746 50  0000 L CNN
+F 1 "MountingHole" H 5200 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5100 3700 50  0001 C CNN
+F 3 "~" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61BB65E1
+P 5950 3700
+F 0 "H4" H 6050 3746 50  0000 L CNN
+F 1 "MountingHole" H 6050 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5950 3700 50  0001 C CNN
+F 3 "~" H 5950 3700 50  0001 C CNN
+	1    5950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 61BC5700
+P 2000 2450
+F 0 "SW1" H 2000 2717 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2000 2626 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 2000 2450 50  0001 C CNN
+F 3 "~" H 2000 2450 50  0001 C CNN
+	1    2000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2700 2300 2450
+Wire Wire Line
+	1200 2700 2300 2700
+$Comp
+L PJ-037B:PJ-037B J7
+U 1 1 61BF3F62
+P 1350 1100
+F 0 "J7" H 1345 1440 50  0000 C CNN
+F 1 "PJ-037B" H 1345 1349 50  0000 C CNN
+F 2 "CUI_PJ-037B" H 1350 1100 50  0001 L BNN
+F 3 "" H 1350 1100 50  0001 L BNN
+F 4 "CUI INC" H 1350 1100 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer recommendations" H 1350 1100 50  0001 L BNN "STANDARD"
+	1    1350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1200 1700 1600
+$EndSCHEMATC
